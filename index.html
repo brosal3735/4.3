@@ -1,40 +1,35 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Greeting Card Builder</title>
-
-  <!-- Provided student files -->
-  <script src="modernizr.custom.65897.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Optional minimal helpers in case styles.css is empty */
-    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
-    .wrap { max-width: 600px; margin: 0 auto; }
-    label { display: block; margin-bottom: .5rem; font-weight: 600; }
-    textarea { width: 100%; min-height: 120px; padding: .75rem; }
-    button { margin-top: 1rem; padding: .6rem 1rem; cursor: pointer; }
-    .hint { color: #555; font-size: .9rem; margin-top: .5rem; }
-  </style>
+    <!--
+        CIS213 Unit 4, Guided Practice 1
+        Author: <Your Name Here>
+        Date:   <Date Here>
+    -->
+    <meta charset="utf-8" />
+    <meta id="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>Unit 4, Guided Practice 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="modernizr.custom.65897.js"></script>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Greeting Card Builder</h1>
-    <p>Enter the message for your card, then click Preview.</p>
-
-    <form id="cardForm" autocomplete="on">
-      <label for="message">Your message</label>
-      <textarea id="message" name="message" placeholder="Type a short greeting..." required autofocus></textarea>
-      <button id="previewBtn" type="submit">Preview</button>
-      <p class="hint">Tip: Allow pop-ups in your browser to open the preview in a new tab.</p>
-    </form>
-  </div>
-
-  <noscript>
-    <p>Please enable JavaScript to use the greeting card preview.</p>
-  </noscript>
-
-  <script src="script.js" defer></script>
+    <header>
+        <h1>
+            Your Name, Guided Practice 1
+        </h1>
+    </header>
+    <article>
+        <h2>Create Greeting Card</h2>
+        <form action="preview.htm">
+            <fieldset id="info">
+                <label for="greetinginput">Greeting Text</label>
+                <input type="text" id="greetinginput" name="greeting" />
+            </fieldset>
+            <fieldset id="submitbutton">
+                <input type="submit" id="submitBtn" value="Preview" />
+            </fieldset>
+        </form>
+    </article>
+    <script src="script.js"></script>
 </body>
 </html>
